@@ -45,7 +45,7 @@ public class MessageViewRanderer implements GLSurfaceView.Renderer {
         gl.glDepthFunc(GL10.GL_LEQUAL);
         gl.glLoadIdentity();
         azimuth = 25;
-        //azimuth = MyData.getAzimuth();
+        azimuth = MyData.getAzimuth();
         roll = MyData.getDeviceOrientationAngle();
         if (MyData.getScreen() == MyData.Screen.LIVE_VIEW)
             renderLiveScreen(gl);

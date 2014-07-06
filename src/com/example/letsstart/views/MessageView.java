@@ -75,7 +75,7 @@ public class MessageView extends GLSurfaceView implements View.OnTouchListener {
             Log.d("",location.toString());
             PhysicalLocation loc = new PhysicalLocation();
             float azimuth = MyData.getAzimuth();
-            azimuth = 30 ;//TODO : comment it later
+            //azimuth = 30 ;//TODO : comment it later
             loc.setLongitude(location.getLongitude() + 0.0001 * Math.sin(Math.toRadians(azimuth)));
             loc.setLatitude(location.getLatitude() + 0.0001 * Math.cos(Math.toRadians(azimuth)));
             Log.d("" , loc.toString() + MyData.getCurrentLocation());
